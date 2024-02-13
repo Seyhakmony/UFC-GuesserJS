@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighter Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = background>
+    <div id="app">
+        <h1>Guess the UFC Fighter</h1>
+        <!-- <button id="loadFighters">Load Fighters</button> -->
+        <button type="button" id = "loadFighters">Start Load Fighter</button>
+        <button type="button" id="giveUpButton" class="game-elements">Give Up</button>
+        <p id="randomFighter" class = "game-elements"></p>
+        <input type="text" id="userGuess" placeholder="Enter your guess here" class = "game-elements">
+        <div id="auto" class="auto-items"></div>
+        <button type = "button"  id="submitGuess" class = "game-elements">Submit Guess</button>
+        <p id="result"></p>
+
+        <table class = "fighter-picked-table" id="fighter-picked-table" class = "game-elements">
+            <tr id = header>
+                <th id = name>Name</th>
+                <th id = NickName>NickName</th>
+                <th>Age</th>
+                <th id = Height>Height
+                </th>
+                <th>Weight</th>
+                <th>Reach</th>
+                <th>Stance</th>
+                <th>Wins</th>
+                <th>Loses</th>
+                <th>Draws</th>
+
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <p id = "hintT" class = "hintT">
+          Hints
+        </p>
+        <p class = "hint" id ="hint"></p>
+    </div>
+
+    <div id="congratModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Congratulations! You've guessed correctly!</p>
+        </div>
+      </div>
+
+      <div id="failure" class="fail">
+        <div class="fmodal-content">
+          <span class="fclose">&times;</span>
+          <p>You have given up <br><br> Answer: </p>
+          <p id = answer></p>
+        </div>
+      </div>
+      <script src="ufc-stat.js" type="module"></script>
+<script src="script.js" type="module"></script>
+    <script src="autocomplete.js"></script>
+</div>
+</body>
+</html>
