@@ -247,9 +247,9 @@ function compareAndDisplay(row, guessedStats) {
         ageCell.style.backgroundColor = '#ffcccc';
     }
     if (guessedStats.age < fighterStat[8]) {
-        ageCell.innerHTML += '<img src="up.png" alt="Up" width="30" height="30">';
+        ageCell.innerHTML += '<img src="up.png" alt="Up" class="a-img">';
     } else if (guessedStats.age > fighterStat[8]) {
-        ageCell.innerHTML += '<img src="down.png" alt="Down" width="30" height="30">';
+        ageCell.innerHTML += '<img src="down.png" alt="Down" class="a-img">';
     } else {
         ageCell.style.backgroundColor = '#00FF00';
     }
@@ -264,10 +264,10 @@ function compareAndDisplay(row, guessedStats) {
         heightCell.style.backgroundColor = '#ffcccc';
     }
     if (actualHeight > guessedHeight) {
-        heightCell.innerHTML += '<img src="up.png" alt="Up" width="30" height="30">';
+        heightCell.innerHTML += '<img src="up.png" alt="Up" class="a-img">';
     }
     if (actualHeight < guessedHeight) {
-        heightCell.innerHTML += '<img src="down.png" alt="Down" width="30" height="30">';
+        heightCell.innerHTML += '<img src="down.png" alt="Down" class="a-img">';
     }
     if (actualHeight == guessedHeight) {
         heightCell.style.backgroundColor = '#00FF00';
@@ -285,10 +285,10 @@ function compareAndDisplay(row, guessedStats) {
         weightCell.style.backgroundColor = '#ffcccc';
     }
     if(actualWeight > guessedWeight){
-        weightCell.innerHTML += '<img src="up.png" alt="Up" width="30" height="30">';
+        weightCell.innerHTML += '<img src="up.png" alt="Up" class="a-img">';
     }
     if(actualWeight < guessedWeight){
-    weightCell.innerHTML += '<img src="down.png" alt="Down" width="30" height="30">';
+    weightCell.innerHTML += '<img src="down.png" alt="Down" class="a-img">';
     }
     if(actualWeight == guessedWeight){
         weightCell.style.backgroundColor = '#00ff00';
@@ -304,10 +304,10 @@ function compareAndDisplay(row, guessedStats) {
         reachCell.style.backgroundColor = '#ffcccc';
     }
     if (actualReach > guessedReach) {
-        reachCell.innerHTML += '<img src="up.png" alt="Up" width="30" height="30">';
+        reachCell.innerHTML += '<img src="up.png" alt="Up" class="a-img">';
     }
     if (actualReach < guessedReach) {
-        reachCell.innerHTML += '<img src="down.png" alt="Down" width="30" height="30">';
+        reachCell.innerHTML += '<img src="down.png" alt="Down" class="a-img">';
     }
     if (actualReach == guessedReach) {
         reachCell.style.backgroundColor = '#00FF00'; 
@@ -333,9 +333,9 @@ function compareAndDisplay(row, guessedStats) {
         winsCell.style.backgroundColor = '#ffcccc';
     }
     if (guessedWins < actualWins) {
-        winsCell.innerHTML += '<img src="up.png" alt="Up" width="30" height="30">';
+        winsCell.innerHTML += '<img src="up.png" alt="Up" class="a-img">';
     } else if (guessedWins > actualWins) {
-        winsCell.innerHTML += '<img src="down.png" alt="Down" width="30" height="30">';
+        winsCell.innerHTML += '<img src="down.png" alt="Down" class="a-img">';
     } else {
         winsCell.style.backgroundColor = '#00FF00'; 
     }
@@ -352,9 +352,9 @@ function compareAndDisplay(row, guessedStats) {
         lossesCell.style.backgroundColor = '#ffcccc';
     }
     if (guessedLosses < actualLosses) {
-        lossesCell.innerHTML += '<img src="up.png" alt="Up" width="30" height="30">';
+        lossesCell.innerHTML += '<img src="up.png" alt="Up" class="a-img">';
     } else if (guessedLosses > actualLosses) {
-        lossesCell.innerHTML += '<img src="down.png" alt="Down" width="30" height="30">';
+        lossesCell.innerHTML += '<img src="down.png" alt="Down" class="a-img">';
     } else {
         lossesCell.style.backgroundColor = '#00FF00'; 
     }
@@ -369,9 +369,9 @@ function compareAndDisplay(row, guessedStats) {
         drawsCell.style.backgroundColor = '#ffcccc';
     }
     if (guessedDraws < actualDraws) {
-        drawsCell.innerHTML += '<img src="up.png" alt="Up" width="30" height="30">';
+        drawsCell.innerHTML += '<img src="up.png" alt="Up" class="a-img">';
     } else if (guessedDraws > actualDraws) {
-        drawsCell.innerHTML += '<img src="down.png" alt="Down" width="30" height="30">';
+        drawsCell.innerHTML += '<img src="down.png" alt="Down" class="a-img">';
     } else {
         drawsCell.style.backgroundColor = '#00FF00';
     }
